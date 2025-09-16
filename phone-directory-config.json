@@ -1,0 +1,43 @@
+{
+  "title": "Busqueda de Teléfonos de Sucursales",
+  "description": "...",
+  "features": [
+    "File upload for CSV and Excel (.xlsx, .xls) data",
+    "Codigo Sucursal or Nombre Sucursal",
+    "Displays branch details and multiple phone numbers/extensions",
+    "Responsive UI with modern styling",
+    "Loading spinner and error/info messages"
+  ],
+  "fields": [
+    "BranchCode",
+    "Branch Name",
+    "Manager",
+    "Extensions",
+    "Ext 2",
+    "Ext 3",
+    "Flota Gerencia",
+    "Flota 1",
+    "Flota 2",
+    "Directo 1",
+    "Directo 2"
+  ],
+  "dependencies": [
+    "PapaParse (CSV parsing)",
+    "SheetJS (xlsx Excel parsing)"
+  ],
+  "search": {
+    "input": "Codigo Sucursal or Nombre Sucursal",
+    "caseInsensitive": true,
+    "partialMatch": true
+  },
+  "ui": {
+    "fileUpload": true,
+    "searchInput": true,
+    "searchButton": true,
+    "resultsDisplay": "Grid of branch and phone info",
+    "loadingSpinner": true,
+    "errorMessages": true,
+    "infoMessages": true
+  },
+  "autoLoadFilePath": "dataphonece.xlsx"
+}
